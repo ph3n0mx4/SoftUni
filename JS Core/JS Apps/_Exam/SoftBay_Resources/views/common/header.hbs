@@ -1,0 +1,61 @@
+<!-- header -->
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#/home">SoftBay</a>
+        {{#if loggedIn}}
+            <a class="navbar-item" href="#/offers">Dashboard</a>
+            <a class="navbar-item" href="#/create">Create Offer</a>
+            <!--BONUS (NOT REQUIRED)--><a class="navbar-item" href="#/profile">Profile</a><!--BONUS (NOT REQUIRED)-->
+            <a class="navbar-item" href="#/logout">Logout</a>
+        {{else}}
+            <a class="btn btn-warning" href="#/login">Login</a>
+        {{/if}}
+    </div>
+</nav>
+<!-- ./header -->
+<!--Notifications (BONUS - Not required)-->
+<section id="notifications">
+    <div class="p-3 mb-2 bg-success w-50 text-white text-center" id="successBox">Success</div>
+    <div class="p-3 mb-2 bg-danger w-50 text-white text-center" id="errorBox">Error</div>
+    <div class="p-3 mb-2 bg-info w-50 text-white text-center" id="loadingBox">Loading...</div>
+</section>
+<!-- ./Notifications (BONUS - Not required)-->
+
+<!--<header class="masthead mb-auto">
+    <div class="inner">
+        <h3 class="masthead-brand">CookUni</h3>
+        <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="#/home">Home</a>
+            {{#if loggedIn}}
+            <a class="nav-link" href="#/home">Welcome, {{firstName}} {{lastName}}!</a>
+            <a class="nav-link" href="#/create">Share recipe</a>
+            <a class="nav-link" href="#/logout">Logout</a>
+            {{else}}
+            <a class="nav-link" href="#/login">Login</a>
+            <a class="nav-link" href="#/register">Register</a>
+            {{/if}}
+        </nav>
+    </div>
+</header>
+
+<div id="notifications">
+    <div id="successBox" class="alert alert-success" role="alert">{Success Message...}</div>
+    <div id="loadingBox" class="alert alert-info" role="alert">Loading...</div>
+    <div id="errorBox" class="alert alert-danger" role="alert">{Error Message...}</div>
+</div>-->
+
+<!--<nav>
+    <ul>
+        <li><a href="#/home">Home</a></li>
+        {{#if loggedIn}}
+            <li><a href="#/home">Cinema</a></li>
+            <li><a href="#/createMovie">Add Movie</a></li>
+            <li><a href="#/myMovies">My Movies</a></li>
+            <li class="right"><a href="#/logout">Logout</a></li>
+            <li class="right">Welcome, {{username}}!</li>
+        {{else}}
+            <li class="right"><a href="#/register">Register</a></li>
+            <li class="right"><a href="#/login">Login</a></li>
+        {{/if}}
+    </ul>
+</nav>-->

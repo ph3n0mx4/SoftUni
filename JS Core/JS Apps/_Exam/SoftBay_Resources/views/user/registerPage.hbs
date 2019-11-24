@@ -1,0 +1,98 @@
+{{>header}}
+
+<!-- page-register-form -->
+<div class="container" style="margin-top:5%; margin-bottom:5%">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3>Registration</h3>
+                <div class="d-flex justify-content-end social_icon">
+                    <span><i class="fab fa-facebook-square"></i></span>
+                    <span><i class="fab fa-google-plus-square"></i></span>
+                    <span><i class="fab fa-twitter-square"></i></span>
+                </div>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="#/register">
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" name="username" class="form-control" placeholder="username">
+
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" name="password" class="form-control" placeholder="password">
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" name="rePassword" class="form-control" placeholder="re-password">
+                    </div>
+
+                    <input type="submit" value="Register" class="btn float-right login_btn">
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-center links">
+                    Already have an account?<a class="text-warning" href="#/login">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.page-register-form -->
+
+
+{{>footer}}
+
+
+
+<!--
+<form class="text-center p-5 form-layout" action="#/register" method="POST">
+
+    <p class="h4 mb-4">Sign up</p>
+
+    <div class="form-row mb-4">
+        <div class="col">
+
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" name="firstName"
+                   placeholder="First name">
+        </div>
+        <div class="col">
+
+            <input type="text" id="defaultRegisterFormLastName" class="form-control" name="lastName"
+                   placeholder="Last name">
+        </div>
+    </div>
+
+    <input type="text" id="defaultRegisterFormUsername" class="form-control mb-4" name="username"
+           placeholder="Username">
+    <input type="password" id="defaultRegisterFormPassword" class="form-control" name="password"
+           placeholder="Password">
+    <hr>
+    <input type="password" id="defaultRegisterRepeatPassword" class="form-control" name="repeatPassword"
+           placeholder="Repeat Password">
+    <button class="btn btn-danger my-4 btn-block w-25 m-auto" type="submit">Sign up</button>
+
+</form>
+-->
+
+
+<!--
+<div id="registerForm">
+    <h1>Register</h1>
+    <form action="#/register" method="POST">
+        <label>Username</label>
+        <input type="text" name="username" id="registerUsername">
+        <label>Password</label>
+        <input type="password" name="password" id="registerPassword">
+        <label>Repeat Password</label>
+        <input type="password" name="repeatPassword" id="registerRepeatPassword">
+        <input type="submit" value="Register">
+    </form>
+</div>-->

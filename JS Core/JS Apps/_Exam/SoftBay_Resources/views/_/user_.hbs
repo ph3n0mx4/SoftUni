@@ -1,0 +1,43 @@
+{{>header}}
+<!--Profile-Page (Bonus - Not Required)-->
+    <div style="padding: 5%;" class="container">
+        <div class="row">
+            <div class="col-md-6 img">
+                <img style="text-align: center; max-width: 450px;" src="./images/userIcon.png" alt=""
+                     class="img-rounded">
+            </div>
+            <div style="border-left:3px solid #ded4da;" class="col-md-6 details">
+                <h2>Profile Page</h2>
+                <blockquote>
+                    <p>Username: <strong>{{username}}</strong></p>
+                    <p>Proffesion: <strong>JavaScript Web Developer</strong></p>
+                    <p>City: <strong>Sofia</strong></p>
+                    <p>Hobby: <strong>Coding (hyped) :0</strong></p>
+                    <p style="text-decoration: underline;">Number of purchases: <strong>74</strong></p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+<!--./Profile-Page (Bonus - Not Required)-->
+
+{{>footer}}
+
+<!--
+<div id="myMovies">
+    <h1>My Movies</h1>
+    <div class="movies">
+        {{#each myMovies}}
+            <div class="movie">
+                <h2>{{ title }}</h2>
+                <img src="{{imageUrl}}">
+                <p>Available Tickets: {{tickets}}</p>
+                <div class="btn-group">
+                    <button><a href="#/editMovie/{{_id}}">Edit</a></button>
+                    <button><a href="#/deleteMovie/{{_id}}">Delete</a></button>
+                    <button><a href="#">Buy Ticket</a></button>
+                    <button><a href="#/detailsEvent/{{_id}}">Details</a></button>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>-->

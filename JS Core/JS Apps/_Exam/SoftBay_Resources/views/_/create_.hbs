@@ -1,0 +1,100 @@
+{{>header}}
+<!-- page-create-offer-form -->
+<div class="container" style="margin-top:5%; margin-bottom:5%">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card" style="height: auto">
+            <div class="card-header">
+                <h3>Create offer</h3>
+                <div class="d-flex justify-content-end social_icon">
+                    <span><i class="fab fa-facebook-square"></i></span>
+                    <span><i class="fab fa-google-plus-square"></i></span>
+                    <span><i class="fab fa-twitter-square"></i></span>
+                </div>
+            </div>
+            <div class="card-body">
+                <form action="#/create" method="POST">
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="product" name="product">
+
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <textarea style="height: auto; width: 85%; resize: none;" placeholder=" description"
+                                  name="description"></textarea>
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="price" name="price">
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="picture url" name="pictureUrl">
+                    </div>
+
+                    <input type="submit" value="Create" class="btn float-right login_btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.page-create-offer-form -->
+
+
+{{>footer}}
+
+<!--<form class="text-center p-5 form-layout" action="#/create" method="POST" id="share-receipt-form">
+    <p class="h4 mb-4">Share Recipe</p>
+
+    <input type="text" id="defaultRecepieShareMeal" name="meal" class="form-control mb-4" placeholder="Meal">
+
+    <input type="text" id="defaultRecepieShareIngredients" name="ingredients" class="form-control mb-4"
+           placeholder="Ingredients">
+
+    <textarea type="text" id="defaultRecepieShareMethodOfPreparation" name="prepMethod"
+              class="form-control mb-4" placeholder="Method of preparation"></textarea>
+
+    <textarea type="text" id="defaultRecepieShareDescription" name="description" class="form-control mb-4"
+              placeholder="Description"></textarea>
+
+    <input type="text" id="defaultRecepieShareFoodImageURL" name="foodImageURL" class="form-control mb-4"
+           placeholder="Food Image URL...">
+
+    <select name="category">
+        <option selected>Select category...</option>
+        <option selected>Vegetables and legumes/beans</option>
+        <option selected>Fruits</option>
+        <option selected>Grain Food</option>
+        <option selected>Milk, cheese, eggs and alternatives</option>
+        <option selected>Lean meats and poultry, fish and alternatives</option>
+    </select>
+
+    <button class="btn btn-danger w-25 m-auto my-4 btn-block" type="submit">Share it</button>
+</form>-->
+
+
+<!--
+<div id="addMovie">
+    <h1>Create movie</h1>
+    <form action="#/createMovie" method="POST">
+        <label>Title</label>
+        <input type="text" name="title" id="createTitle">
+        <label>Image Url</label>
+        <input type="text" name="imageUrl" id="createImage">
+        <label>Description</label>
+        <textarea type="text" name="description" id="createDescription"></textarea>
+        <label>Genres</label>
+        <input type="text" name="genres" id="createGenres">
+        <label>Available Tickets</label>
+        <input type="number" name="tickets" id="createTickets">
+        <input type="submit" value="Create">
+    </form>
+</div>-->
